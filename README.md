@@ -76,8 +76,11 @@
 
 <img src="https://i.ibb.co/WPp4h9q/Screenshot-2024-01-28-113127.png" alt="">
 
-
-(Add)
+<h3>Functionality</h3>
+* User Authentication: Signup/Login
+* User Profile Dashboard
+* Morden UX/UI using Tailwind CSS
+* MEN Stack Implementation
 
 Here's why:
 * p1
