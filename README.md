@@ -86,11 +86,6 @@
   <li>MEN Stack Implementation</li>
 </ul>
 
-Here's why:
-* p1
-* p2
-* p3
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
