@@ -79,6 +79,8 @@
 <h3>Functionality</h3>
 <ul>
   <li>User Authentication: Signup/Login</li>
+  <li>Elegent Dark Mode UI</li>
+  <li>Cross-device Responsive Design</li>
   <li>User Profile Dashboard</li>
   <li>Morden UX/UI using Tailwind CSS</li>
   <li>MEN Stack Implementation</li>
