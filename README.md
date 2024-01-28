@@ -31,7 +31,7 @@
 <br />
 <div align="center">
   <a href="#">
-    <img src="https://ibb.co/jyTM3JD" alt="Logo" width="80" height="80">
+    <img src="https://i.ibb.co/zXrRP6Z/Vector.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">YANA Project</h3>
