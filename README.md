@@ -75,7 +75,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://ibb.co/1dJtgVh)
+[![Product Name Screen Shot][product-screenshot]](https://i.ibb.co/WPp4h9q/Screenshot-2024-01-28-113127.png)
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
