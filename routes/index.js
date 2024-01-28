@@ -38,6 +38,17 @@ router.get("/thanks", function (req, res) {
   res.render("thanks", { currentPage: "/thanks" });
 });
 
+router.get("/subservice", isLoggedIn, function (req, res) {
+  res.render("subservice", { currentPage: "/subservice" });
+});
+
+router.get("/editProfile", isLoggedIn, async function (req, res) {
+  const loggedInUser = await userModel.findOne({
+    username: req.session.passport.user,
+  });
+  res.render("editProfile", { loggedInUser, currentPage: "/subservice" });
+});
+
 router.get("/profile", isLoggedIn, async function (req, res) {
   const loggedInUser = await userModel.findOne({
     username: req.session.passport.user,
@@ -87,6 +98,27 @@ router.post("/contactedUser", async function (req, res) {
   });
   await userContact.save();
   res.redirect("/thanks");
+});
+
+router.post("/editProfile", async function (req, res) {
+  const loggedInUser = await userModel.findOneAndUpdate(
+    {
+      username: req.session.passport.user,
+    },
+    {
+      contact: req.body.contact,
+      location: req.body.location,
+      language: req.body.language,
+      about: req.body.about,
+      description: req.body.description,
+    },
+    {
+      new: true,
+    }
+  );
+  await loggedInUser.save();
+  console.log(loggedInUser);
+  res.redirect("/profile");
 });
 
 router.get("/logout", function (req, res, next) {

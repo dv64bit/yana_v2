@@ -12,6 +12,19 @@ const userSchema = Schema({
   password: String,
   profileImage: String,
   contact: Number,
+  joinedDate: {
+    type: String,
+    default: () =>
+      new Date().toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+      }),
+  },
+  location: String,
+  language: String,
+  description: String,
+  about: String,
 });
 
 userSchema.plugin(plm);
