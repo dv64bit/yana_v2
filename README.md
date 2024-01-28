@@ -77,10 +77,12 @@
 <img src="https://i.ibb.co/WPp4h9q/Screenshot-2024-01-28-113127.png" alt="">
 
 <h3>Functionality</h3>
-* User Authentication: Signup/Login
-* User Profile Dashboard
-* Morden UX/UI using Tailwind CSS
-* MEN Stack Implementation
+<ul>
+  <li>User Authentication: Signup/Login</li>
+  <li>User Profile Dashboard</li>
+  <li>Morden UX/UI using Tailwind CSS</li>
+  <li>MEN Stack Implementation</li>
+</ul>
 
 Here's why:
 * p1
