@@ -127,7 +127,7 @@ After installing the dependencies
 <!-- CONTACT -->
 ## Contact
 
-Darshan Verma - [@your_twitter](https://twitter.com/dv64bit) - darshanverma2002@gmail.com
+Darshan Verma - [@dv64bit](https://twitter.com/dv64bit) - darshanverma2002@gmail.com
 
 Project Link: [https://github.com/dv64bit/yana_v2](https://github.com/dv64bit/yana_v2)
 
