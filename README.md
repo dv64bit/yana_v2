@@ -93,10 +93,11 @@ Here's why:
 
 ### Built With
 
-* [![Node][Node.js]][Node-url]
-* [![MongoDB][Mongodb.com]][Mongodb-url]
-* [![Tailwind][tailwind.com]][tailwind-url]
-* [![Express][express.js]][ExpressJS-url]
+* NodeJS
+* Express
+* Tailwind CSS
+* NPM
+  
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
