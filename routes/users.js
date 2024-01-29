@@ -1,7 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const plm = require("passport-local-mongoose");
-// const Post = require("./createdpost");
 
 mongoose.connect("mongodb://127.0.0.1:27017/YanaProject");
 

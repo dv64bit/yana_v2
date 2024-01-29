@@ -9,44 +9,53 @@ const localStrategy = require("passport-local");
 passport.use(new localStrategy(userModel.authenticate()));
 
 router.get("/", function (req, res) {
-  res.render("index", { currentPage: "/" });
+  res.render("index", { currentPage: "/", user: req.user });
 });
 
 router.get("/services", function (req, res) {
-  res.render("services", { currentPage: "/services" });
+  res.render("services", { currentPage: "/services", user: req.user });
 });
 
 router.get("/contact", function (req, res) {
-  res.render("contact", { currentPage: "/contact" });
+  res.render("contact", { currentPage: "/contact", user: req.user });
 });
 
 router.get("/register", function (req, res) {
   res.render("register", {
     currentPage: "/register",
+    user: req.user,
   });
 });
 
 router.get("/login", function (req, res) {
-  res.render("login", { currentPage: "/register", error: req.flash("error") });
+  res.render("login", {
+    currentPage: "/register",
+    error: req.flash("error"),
+    user: req.user,
+  });
 });
 
 router.get("/about", function (req, res) {
-  res.render("about", { currentPage: "/about" });
+  res.render("about", { currentPage: "/about", user: req.user });
 });
 
 router.get("/thanks", function (req, res) {
-  res.render("thanks", { currentPage: "/thanks" });
+  res.render("thanks", { currentPage: "/thanks", user: req.user });
 });
 
 router.get("/subservice", isLoggedIn, function (req, res) {
-  res.render("subservice", { currentPage: "/subservice" });
+  res.render("subservice", { currentPage: "/subservice", user: req.user });
 });
 
 router.get("/editProfile", isLoggedIn, async function (req, res) {
   const loggedInUser = await userModel.findOne({
     username: req.session.passport.user,
   });
-  res.render("editProfile", { loggedInUser, currentPage: "/subservice" });
+  res.render("editProfile", {
+    loggedInUser,
+    currentPage: "/subservice",
+    user: req.user,
+  });
 });
 
 router.get("/profile", isLoggedIn, async function (req, res) {
@@ -54,7 +63,11 @@ router.get("/profile", isLoggedIn, async function (req, res) {
     username: req.session.passport.user,
   });
   console.log(loggedInUser);
-  res.render("profile", { currentPage: "/profile", loggedInUser });
+  res.render("profile", {
+    currentPage: "/profile",
+    loggedInUser,
+    user: req.user,
+  });
 });
 
 router.post(
