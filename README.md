@@ -16,11 +16,7 @@
   <p align="center">
     An awesome awsome project idea for our elders
     <br />
-    <a href="#">View Demo</a>
-    ·
-    <a href="#">Report Bug</a>
-    ·
-    <a href="#">Request Feature</a>
+    <a href="https://youtu.be/pANT8F-W79Y">View Demo</a>
   </p>
 </div>
 
